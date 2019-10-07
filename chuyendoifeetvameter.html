@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi feet và meter</title>
+</head>
+<body>
+<input type="number" id="input">
+<select id="idchange">
+    <option value="0.305">Foot to Meter</option>
+    <option value="3.279">Meter to Foot</option>
+</select>
+<button onclick="changemonney()">Chuyển đổi</button>
+<div id="output"></div>
+<script>
+    function changemonney(a) {
+        b = document.getElementById('input').value * document.getElementById('idchange').value;
+        document.getElementById('output').innerHTML = b;
+    }
+</script>
+</body>
+</html>
